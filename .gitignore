@@ -5,6 +5,7 @@ nbproject
 .DS_Store
 .idea
 .project
+.sass-cache
 .settings
 composer.lock
 vendor/bin
