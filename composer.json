@@ -1,0 +1,27 @@
+{
+    "name": "pedrobrazao/zf2-skeleton",
+    "description": "Alternative Skeleton Application for Zend Framework 2",
+    "license": "BSD-3-Clause",
+    "homepage": "http://github.com/pedrobrazao/zf2-skeleton",
+    "authors": [
+        {
+            "name": "Pedro Brazão Ferreira"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/pedrobrazao/zf2-skeleton/issues"
+    },
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "2.3.*"
+    },
+    "require-dev": {
+        "components/jquery": "*",
+        "afarkas/html5shiv": "*",
+        "twbs/bootstrap-sass": "dev-master"
+    }
+}

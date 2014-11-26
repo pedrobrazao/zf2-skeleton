@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php
+        // meta tags
+        echo $this->headMeta()
+                ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+                ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <?php
+        // page title
+        echo $this->headTitle('ZF2 App')->setSeparator(' - ')->setAutoEscape(false);
+        ?>
+
+        <?php
+        // link tags
+        echo $this->headLink(array(
+                    'rel' => 'shortcut icon',
+                    'type' => 'image/vnd.microsoft.icon',
+                    'href' => $this->basePath('/assets/img/favicon.ico'),
+                ))
+                ->prependStylesheet($this->basePath('/assets/css/styles.css'))
+                ->prependStylesheet($this->basePath('/assets/css/bootstrap.min.css'))
+        ?>
+
+        <?php
+        // script tags
+        echo $this->headScript()
+                ->prependFile($this->basePath('/assets/js/respond.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+                ->prependFile($this->basePath('/assets/js/html5shiv.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+        ?>
+    </head>
+    <body>
+        <div class="container">
+            <?php echo $this->content; ?>
+        </div>
+
+        <?php
+        // inline script tags
+        echo $this->inlineScript()
+                ->prependFile($this->basePath('/assets/js/bootstrap.min.js'))
+                ->prependFile($this->basePath('/assets/js/jquery.min.js'))
+        ?>
+    </body>
+</html>
