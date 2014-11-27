@@ -33,7 +33,8 @@ To achieve this you must run:
     yui-compressor public/assets/js/html5shiv.js > public/assets/js/html5shiv.min.js
     yui-compressor public/assets/js/respond.js > public/assets/js/respond.min.js
 
-To make our live easy I put all these commands on a single shell script, so that simply run:
+To make our life easy I put all these commands on a single shell script, so that 
+just run:
 
     ./build.sh
 
