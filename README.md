@@ -7,6 +7,8 @@ This is a simple, alternative skeleton application using the Zend Framework 2
 MVC layer and module systems. This application is meant to be used as a starting 
 point for any web based application.
 
+It also includes Doctrine 2 and Bootstrap 3 SASS version ready to customize.
+
 Installation
 ------------
 
@@ -21,8 +23,19 @@ and use `composer` to install dependencies:
     php composer.phar self-update
     php composer.phar install
 
-(The `self-update` directive is to ensure you have an up-to-date `composer.phar`
-available.)
+After that you still need to compile style sheets and minify CSS and Javascript.
+To achieve this you must run:
+
+    compass compile
+    yui-compressor public/assets/css/styles.css > public/assets/css/styles.min.css
+    yui-compressor public/assets/js/bootstrap.js > public/assets/js/bootstrap.min.js
+    yui-compressor public/assets/js/jquery.js > public/assets/js/jquery.min.js
+    yui-compressor public/assets/js/html5shiv.js > public/assets/js/html5shiv.min.js
+    yui-compressor public/assets/js/respond.js > public/assets/js/respond.min.js
+
+To make our live easy I put all these commands on a single shell script, so that simply run:
+
+    ./build.sh
 
 Web Server Setup
 ----------------
