@@ -13,11 +13,13 @@
     },
     "keywords": [
         "framework",
+        "doctrine",
         "zf2"
     ],
     "require": {
         "php": ">=5.5",
-        "zendframework/zendframework": "2.3.*"
+        "zendframework/zendframework": "2.3.*",
+        "doctrine/doctrine-orm-module": "0.8.*"
     },
     "require-dev": {
         "components/jquery": "dev-master",

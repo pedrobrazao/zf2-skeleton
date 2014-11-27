@@ -13,5 +13,21 @@
  */
 
 return array(
-    // ...
+    /**
+     * Doctrine config for MySQL connection
+     */
+    'doctrine' => array(
+        'connection' => array(
+            'orm_default' => array(
+                'driverClass' => 'Doctrine\DBAL\Driver\PDOMySql\Driver',
+                'params' => array(
+                    'host' => 'localhost',
+                    'port' => '3306',
+                    'user' => 'USER',
+                    'password' => 'PASSWORD',
+                    'dbname' => 'DATABASE',
+                ),
+            ),
+        ),
+    ),
 );
