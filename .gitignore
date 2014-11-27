@@ -8,4 +8,4 @@ nbproject
 .sass-cache
 .settings
 composer.lock
-vendor/bin
+vendor/
